@@ -41,11 +41,4 @@ public class EmployeeService {
                 .postForEntity(baseUrl, employee, Employee.class);
         return res.getBody();
     }
-//
-//    public Employee delete(Long id){
-//        Employee employee = getById(id);
-//        restTemplate.delete(baseUrl+"/"+getById(id));
-//        return employee;
-//    }
-
 }

@@ -33,10 +33,10 @@ public class EmployeeController {
         return "home/employees/get-by-id";
     }
 
-    @GetMapping("/form-employee")
+    @GetMapping("/add")
     public String getForm(Model model){
         Employee employee = new Employee();
-        model.addAttribute("employee", employeeService.createEmp(employee));
+        model.addAttribute("employee", employee);
         return "home/employees/create-emp";
     }
 
