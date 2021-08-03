@@ -29,7 +29,7 @@
                     <textarea th:field="*{address}" cols="30" rows="10" placeholder="Input your address" class="form-control"></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="text" th:field="*{department}" placeholder="Input your ID Dept" class="form-control">
+                    <input type="text" th:field="*{department.id}" placeholder="Input your ID Dept" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-primary">Create Employee</button>
             </form>
