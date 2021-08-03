@@ -21,8 +21,4 @@ public class Department implements Serializable {
         this.name = name;
     }
 
-    public Department(Long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
 }

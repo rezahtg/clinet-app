@@ -41,4 +41,14 @@ public class EmployeeService {
                 .postForEntity(baseUrl, employee, Employee.class);
         return res.getBody();
     }
+
+    public String update(Long id, Employee employee){
+        restTemplate.put(baseUrl+"/"+id, employee, Employee.class);
+        return "update success";
+    }
+
+    public String delete(Long id){
+        restTemplate.delete(baseUrl+"/"+id, Employee.class);
+        return "delete success";
+    }
 }
